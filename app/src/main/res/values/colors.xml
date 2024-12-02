@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    
+    <!-- Colores personalizados -->
+    <color name="button_text_color">#FFFFFF</color>
+    <color name="direction_button_color">#3F51B5</color>
+    <color name="accelerate_button_bg">#1976D2</color>
+    <color name="brake_button_bg">#D32F2F</color>
+    <color name="button_stroke_color">#FFFFFF</color>
+    <color name="ripple_color">#80FFFFFF</color>
+</resources>

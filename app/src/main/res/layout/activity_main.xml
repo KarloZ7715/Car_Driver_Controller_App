@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Flecha Arriba -->
+    <com.pack.cardrivercontroller.CustomButton
+        android:id="@+id/button_up"
+        style="@style/DirectionButton"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:contentDescription="@string/button_up_description"
+        android:text="@string/button_up_text"
+        android:textSize="40sp"
+        android:translationX="50dp"
+        android:translationY="180dp"
+        app:layout_constraintBottom_toTopOf="@id/button_left"
+        app:layout_constraintEnd_toEndOf="@id/button_right"
+        app:layout_constraintStart_toStartOf="@id/button_left"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <!-- Flecha Izquierda -->
+    <com.pack.cardrivercontroller.CustomButton
+        android:id="@+id/button_left"
+        style="@style/DirectionButton"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/button_left_description"
+        android:text="@string/button_left_text"
+        android:textSize="40sp"
+        android:translationX="7dp"
+        android:translationY="300dp"
+        app:layout_constraintBottom_toTopOf="@id/button_down"
+        app:layout_constraintEnd_toStartOf="@id/button_right"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_up" />
+
+    <!-- Flecha Derecha -->
+
+    <!-- Flecha Abajo -->
+
+    <com.pack.cardrivercontroller.CustomButton
+        android:id="@+id/button_right"
+        style="@style/DirectionButton"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="8dp"
+        android:contentDescription="@string/button_right_description"
+        android:text="@string/button_right_text"
+        android:textSize="40sp"
+        android:translationX="105dp"
+        android:translationY="300dp"
+        app:layout_constraintBottom_toBottomOf="@id/button_left"
+        app:layout_constraintEnd_toStartOf="@id/button_accelerate"
+        app:layout_constraintStart_toEndOf="@id/button_left"
+        app:layout_constraintTop_toTopOf="@id/button_left"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.pack.cardrivercontroller.CustomButton
+        android:id="@+id/button_down"
+        style="@style/DirectionButton"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:contentDescription="@string/button_down_description"
+        android:text="@string/button_down_text"
+        android:textSize="40sp"
+        android:translationX="50dp"
+        android:translationY="300dp"
+        app:layout_constraintEnd_toEndOf="@id/button_right"
+        app:layout_constraintStart_toStartOf="@id/button_left"
+        app:layout_constraintTop_toBottomOf="@id/button_left" />
+
+    <!-- Pedal Acelerador -->
+    <com.pack.cardrivercontroller.CustomButton
+        android:id="@+id/button_accelerate"
+        style="@style/PedalButton"
+        android:layout_width="120dp"
+        android:layout_height="96dp"
+        android:contentDescription="@string/button_accelerate_description"
+        android:text="@string/button_accelerate_text"
+        android:textSize="24sp"
+        android:translationX="-10dp"
+        android:translationY="250dp"
+        app:layout_constraintBottom_toTopOf="@id/button_brake"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/button_right"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <!-- Pedal Freno -->
+    <com.pack.cardrivercontroller.CustomButton
+        android:id="@+id/button_brake"
+        style="@style/BrakePedalButton"
+        android:layout_width="120dp"
+        android:layout_height="97dp"
+        android:contentDescription="@string/button_brake_description"
+        android:text="@string/button_brake_text"
+        android:textSize="24sp"
+        android:translationX="-10dp"
+        android:translationY="260dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/button_accelerate"
+        app:layout_constraintStart_toStartOf="@id/button_accelerate"
+        app:layout_constraintTop_toBottomOf="@id/button_accelerate" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CarDriverController</string>
+
+    <!-- Textos para botones de dirección -->
+    <string name="button_up_text">↑</string>
+    <string name="button_down_text">↓</string>
+    <string name="button_left_text">←</string>
+    <string name="button_right_text">→</string>
+
+    <!-- Descripciones para botones de direcciones -->
+    <string name="button_up_description">Mover hacia arriba</string>
+    <string name="button_down_description">Mover hacia abajo</string>
+    <string name="button_left_description">Mover hacia la izquierda</string>
+    <string name="button_right_description">Mover hacia la derecha</string>
+
+    <!-- Textos para pedales -->
+    <string name="button_accelerate_text">Acelerar</string>
+    <string name="button_brake_text">Frenar</string>
+
+    <!-- Descripciones para pedales -->
+    <string name="button_accelerate_description">Pedal de Acelerador</string>
+    <string name="button_brake_description">Pedal de Freno</string>
+
+    <!-- Mensajes de Bluetooth -->
+    <string name="bluetooth_not_enabled">Bluetooth no está habilitado</string>
+    <string name="bluetooth_required">Bluetooth es necesario para esta aplicación</string>
+    <string name="connected_to_esp32">Conectado al ESP32</string>
+    <string name="connection_error_retrying">Error al conectar con el ESP32. Intentando reconectar…</string>
+    <string name="connection_failed">No se pudo conectar al ESP32 después de varios intentos.</string>
+    <string name="connection_lost">Conexión con el ESP32 perdida</string>
+
+    <!-- Mensajes de Permisos -->
+    <string name="permission_required">Permiso Requerido</string>
+    <string name="bluetooth_connect_explanation">Esta aplicación necesita acceder a Bluetooth para controlar el coche.</string>
+    <string name="bluetooth_scan_explanation">Esta aplicación necesita escanear dispositivos Bluetooth para encontrar el ESP32.</string>
+    <string name="location_permission_explanation">Esta aplicación necesita acceder a tu ubicación para escanear dispositivos Bluetooth.</string>
+    <string name="generic_permission_explanation">Permiso requerido para el funcionamiento de la aplicación.</string>
+    <string name="permissions_required">Permisos necesarios no otorgados</string>
+
+    <!-- Botones -->
+    <string name="accept">Aceptar</string>
+    <string name="cancel">Cancelar</string>
+
+    <!-- Mensajes de Envío de Comandos -->
+    <string name="send_command_error">Error al enviar comando</string>
+    <string name="not_connected">No conectado al ESP32</string>
+
+    <!-- Mensajes desde ESP32 -->
+    <string name="message_from_esp32">Mensaje del ESP32: %1$s</string>
+</resources>
